@@ -95,7 +95,7 @@ function startRecognition() {
   }
 }
 
-function stt() {
+async function stt() {
   const text = transcript;
   nlp(text);
 }
@@ -121,7 +121,7 @@ async function nlp(text) {
     }
     tts(BotAnswer);
   } else {
-    console.error('โครงสร้างข้อมูลไม่ตรงตามที่คาดหวัง');
+    console.error('Error Type');
   }
 }
 
